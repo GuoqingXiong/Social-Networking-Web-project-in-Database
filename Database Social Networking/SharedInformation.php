@@ -19,10 +19,10 @@ const FILE_TYPE_ERROR = "File type is neither jpg";
 const SUCCESS = "Success!";
 const FAIL_TO_INSERT = "Fail to insert to DB! You may have registered with this phone number!";
 
-const SERVER_URL ="pdc-amd01.poly.edu";
-const DB_NAME = "gx267";
-const DB_USER_NAME = "gx267";
-const DB_PASSWORD = "7rkdzmg7";
+const SERVER_URL ="";
+const DB_NAME = "";
+const DB_USER_NAME = "";
+const DB_PASSWORD = "";
 
 $dbconn = "host=" . SERVER_URL . " dbname=" . DB_NAME . " user=" . DB_USER_NAME . " password=" . DB_PASSWORD;
 $db = pg_connect("$dbconn");
