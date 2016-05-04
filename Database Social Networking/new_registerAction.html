@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>submit file</title>
+		
+		<style type="text/css">
+		body {background-image:url(http://www.tercihisi.com/style/bg.jpg)}
+		</style>
+		
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+		
+		
+	
+</head>
+
+<body>
+
+<!-- navbar  -->
+		
+		<nav class="navbar navbar-inverse">
+			
+			  <div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+				  <a class="navbar-brand" href="#">Database Final Project</a>
+				</div>
+
+				
+				
+			  </div><!-- /.container-fluid -->
+			  
+			  
+		</nav>
+
+<form action="register.php" method = "post" enctype="multipart/form-data">
+
+	<div class="container">
+		<div class="row">
+			
+			<div class="col-sm-6">
+				<img style="height:500px; width:500px" src="http://i50.tinypic.com/zmz1af.jpg" />
+			</div>
+			
+			<div class="col-sm-6">
+				<div class="panel panel-default">
+					  <div class="panel-heading">
+						<h3 class="panel-title">Profile</h3>
+					  </div>
+					  <div class="panel-body">
+							<table>
+								<tr>
+								<input type="number" class="form-control" name="phone" placeholder="phone" aria-describedby="basic-addon1">
+								</tr>
+								<br/>
+								<tr>
+								<input type="text" class="form-control" name="name" placeholder="name" aria-describedby="basic-addon1">
+								</tr>
+								<br/>
+								<tr>
+								<input type="password" class="form-control" name="password" placeholder="password" aria-describedby="basic-addon1">
+								</tr>
+								<br/>
+								
+								<tr>
+								<input type="file" name="fileUpload" style="width:500px"/>
+								</tr>
+								<br/>
+								<input type="submit" class="btn btn-default" name="submit" value="submit" onClick="window.open('http://localhost:8888/index.html')"/>
+						
+							</table>
+					  </div>
+				</div>
+			</div>
+			
+			
+		</div>
+	</div>
+</form>
+</body>
+</html>

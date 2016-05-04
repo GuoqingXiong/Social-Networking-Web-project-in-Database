@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>update_profile</title>
+	<style type="text/css">
+		body {background-image:url(http://www.tercihisi.com/style/bg.jpg)}
+		</style>
+		
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+		
+</head>
+<body>
+<!-- navbar  -->
+		
+		<nav class="navbar navbar-inverse">
+			
+			  <div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+				  <a class="navbar-brand" href="http://localhost:8888/new_mainPage.php">Database Final Project</a>
+				</div>
+
+				
+				
+			  </div><!-- /.container-fluid -->
+			  
+			  
+		</nav>
+<form action="updateProfileAction.php" method = "post" enctype="multipart/form-data">
+    <div class="col-sm-10">
+		<div class="panel panel-default">
+			<div class="panel-heading" > 
+						<h5>Profile</h5>		
+			 </div>
+			<div class="panel-body">
+				<table>
+					<tr> 
+						<div class="input-group">
+						  <span class="input-group-addon" id="basic-addon1">Username</span>
+						  <input type="text" class="form-control" name="name" placeholder="Username" aria-describedby="basic-addon1">
+						</div>
+					</tr>
+					<br/>
+					<tr> 
+						<div class="input-group">
+						  <span class="input-group-addon" id="basic-addon1">Password</span>
+						  <input type="text" class="form-control" name="password" placeholder="password" aria-describedby="basic-addon1">
+						</div>
+					</tr>
+					<br/>
+					<tr> 
+						<div class="input-group">
+						  <label for="file">New avatar:</label>
+							<input type="file" name="file" id="file"/>
+							<br />
+							<input class="btn btn-default" type="submit" name="submit" value="submit" onClick="window.open('http://localhost:8888/new_mainPage.php')"/>
+
+						  </div>
+					</tr>
+    </form>
+</body>
+</html>
